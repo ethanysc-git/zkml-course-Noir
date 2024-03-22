@@ -1,0 +1,48 @@
+{
+  "name": "zkmnist-noir",
+  "version": "1.0.0",
+  "description": "An implementation of a neural network trained on the MNIST data proved & verified using Noir",
+  "scripts": {
+    "dev": "hardhat compile && yarn deploy && next",
+    "build": "hardhat compile && yarn deploy && next build",
+    "start": "next start",
+    "deploy": "hardhat compile && hardhat run --network ${NETWORK} scripts/deploy.ts"
+  },
+  "dependencies": {
+    "@aztec/bb.js": "0.11.0",
+    "@noir-lang/backend_barretenberg": "^0.17.0",
+    "@noir-lang/noir_js": "^0.17.0",
+    "@noir-lang/noir_wasm": "^0.17.0",
+    "@noir-lang/source-resolver": "^0.17.0",
+    "@noir-lang/types": "^0.17.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@tensorflow/tfjs": "^4.12.0",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.17.0",
+    "install-peers": "^1.0.4",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-latex-next": "^2.2.0",
+    "react-loader-spinner": "^5.4.5",
+    "react-toastify": "^9.1.1",
+    "typechain": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.15.5",
+    "@types/react": "^18.0.26",
+    "chai": "^4.2.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  }
+}
